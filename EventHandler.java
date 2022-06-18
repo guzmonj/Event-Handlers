@@ -1,4 +1,4 @@
-package com.platinmods.core;
+package com.company.activity;
 class EventHandler implements java.lang.reflect.InvocationHandler {
     long f;
     EventHandler(long f) { this.f = f; }
