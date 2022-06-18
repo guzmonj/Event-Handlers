@@ -15,6 +15,7 @@ jobject invoke(JNIEnv *env, jobject obj, jobject proxy, jobject method, jobjectA
     jfieldID field = env->GetFieldID(klass, "f", "J");
     Func func = (Func)env->GetLongField(obj, field);
     func(env, obj, proxy, method, args);
+    env->DeleteLocalRef(klass);
 
     return nullptr;
 }
