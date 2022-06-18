@@ -20,7 +20,7 @@ jobject invoke(JNIEnv *env, jobject obj, jobject proxy, jobject method, jobjectA
     return nullptr;
 }
 
-void registerInvocationHandler(const char* text) {
+void RegisterHandler(const char* text) {
     JNINativeMethod native[1];
     jclass klass = env->FindClass(text);
     native[0] = {"invoke", "(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;", (void *)invoke};
