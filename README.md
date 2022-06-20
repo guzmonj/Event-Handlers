@@ -1,5 +1,5 @@
 # Event-Handlers
-What: Native attributes in Java can be ported to c++ using the code provided.
+What: Native attribute methods in Java can be ported to c++ using the code provided.
 
 Why: Java code is easily readable and will provide an easier insight for those digging into your code vs reversing android libraries providing little to no detail (if compiled to so).
 
